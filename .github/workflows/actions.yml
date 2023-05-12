@@ -22,8 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas==1.5.3
           pip install deta==1.1.0
-          pip install PyGithub==1.58.2
-
+          
       - name: execute py script # run update_df.py
         env:
           DETA_KEY: ${{secrets.DETA_KEY}}
