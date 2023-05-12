@@ -20,7 +20,7 @@ for movie in range(len(data)):
 
 
 # Authenticate to GitHub using a personal access token
-g = Github(os.environ['GITHUB_TOKEN'])
+g = Github(os.environ['${{ github.token }}'])
 
 # Get the repository you want to add the file to
 repo = g.get_repo('jeshuacn/movie_recommender_app')
