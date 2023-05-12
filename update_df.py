@@ -1,7 +1,8 @@
 # Updates dataframe
-
+import os
 import database as db
 import pandas as pd
+from github import Github #pip install PyGithub
 
 df = pd.read_pickle('data/avg_movies_desc_vectors.pkl')
 
@@ -18,6 +19,14 @@ for movie in range(len(data)):
     df.loc[len(df)] = new_movie
 
 
-df.to_pickle('data/avg_movies_desc_vectors.pkl')
+# Authenticate to GitHub using a personal access token
+g = Github(os.environ['GITHUB_TOKEN'])
+
+# Get the repository you want to add the file to
+repo = g.get_repo('jeshuacn/movie_recommender_app')
+
+# Create the file in the repository
+repo.create_file('data/avg_movies_desc_vectors.pkl', 'Updated dataframe', df)
+
 
 db.remove_movies()
