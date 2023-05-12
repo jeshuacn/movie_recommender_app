@@ -3,7 +3,7 @@
 import database as db
 import pandas as pd
 
-df = pd.read_pickle('avg_movies_desc_vectors.pkl')
+df = pd.read_pickle('data/avg_movies_desc_vectors.pkl')
 
 
 data = db.fetch_movies()
