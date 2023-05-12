@@ -9,7 +9,7 @@ def app_settings():
         Dictionary: Dictionary with value of the App's title, icon, layout and style.
     """
         
-    title='Movie Recommender'
+    title='MovieMatch'
     icon = '🎞'
     layout = 'wide'
 
