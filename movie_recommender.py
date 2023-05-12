@@ -26,7 +26,8 @@ settings.add_bg_from_local('images/back_ground.jpg')
 st.title("Movie Recomendation") # Title
 
 #--------- SIDEBAR --------------
-st.sidebar.title('Movie Recommendation System')
+st.sidebar.title('MovieMatch')
+st.sidebar.markdown('### Movie Recommendation System')
 st.sidebar.write('Welcome to the Movie Recommendation app!')
 st.sidebar.write('If you\'re unsure of what movie to watch, you can input the name of your favorite movie and let the AI Model do the job to find similar movies to recommend.') 
 
