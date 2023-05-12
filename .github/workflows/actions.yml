@@ -23,7 +23,8 @@ jobs:
           pip install pandas==1.5.3
           
       - name: execute py script # run update_df.py
-
+        env:
+          DETA_KEY: ${{secrets.DETA_KEY}}
         run: python update_df.py
           
       - name: commit files
