@@ -1,5 +1,4 @@
 # Movie Recommender using Word Embeddings
------------------------------------------------
 
 Welcome to the Movie Recommendation App! This app is designed to help users discover new movies and tv-shows based recommendations using word embedding.
 
@@ -8,7 +7,7 @@ Movies/TV-Shows recommendations using [Gensim](https://radimrehurek.com/gensim/)
 Recommended movies are from 2017 and before due to the information available in the database. The app will be automatically updated weekly as more recent movies are incorporated into the search.
 
 # Data Collection
------------------------------------------------
+
 The data was obtained from [The movie dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle. The dataset contains metadata for 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017.
 
 This dataset consists of the following files:
@@ -42,7 +41,7 @@ ratings_small.csv: The subset of 100,000 ratings from 700 users on 9,000 movies.
 For this project the movies_metadata.csv and keywords.csv files were used.
 
 # Model 
-------------------------------------------------------------------------------
+
 Used the Word2vec technique for generating word embeddings for the movie descriptions. Word2vec is a neural network-based technique that learns high-quality distributed vector representations of words from large amounts of text data.
 
 To train our Word2vec model, we used the [gensim](https://radimrehurek.com/gensim/) library. The gensim implementation provides an efficient implementation of the skip-gram and continuous bag of words (CBOW) models. We used the Word2Vec algorithm with skip-gram architecture to train our word embeddings. Skip-gram aims to predict the context words given a target word, and it has been shown to work well with large datasets and in capturing semantic relationships between words. We used the Gensim library to train our model on the movie descriptions and other metadata.
@@ -58,11 +57,11 @@ Seed: 14
 Overall, the Word2vec model was trained to generate high-quality word embeddings that could capture the semantic and syntactic relationships between words in the movie descriptions. These word embeddings were then used to calculate the cosine similarity between the movie descriptions and generate movie recommendations.
  
 # Deployment
---------------------------------------------------------------------------------
+
 App was deployed using Streamlit.io community cloud. [Website](link).
 
 # How to Run the App
-----------------------------------------------------------------------------------
+
 To run the app localy, follow these steps:
 
 1- Download the required paackages by running the following command in your terminal:
@@ -80,16 +79,15 @@ To run the app localy, follow these steps:
 
 
 # App features:
-----------------------------------------------------------------------------------
+
 The app has the ability to update itselfe. Everytime a new movie is seached that was not previously present in the database, that new movie/tv-show will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a github action that will be triggered weekly.
 
 The movie poster's and trailer's URLs are retreived from the TMDB API ![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f)
 If the poster and/or the trailer URL is not available on TMDB the app gets the poster URL from IMDB API and the app will perform a youtube search to get the trailer URL.
 
-<img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f" width="30%" height="25%">
+<img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f" width="10%" height="10%">
 
 ## Recommendation Examples:
 
 # License
-----------------------------------------------------
 This project is licensed under the [MIT License](https://opensource.org/license/mit/)
