@@ -89,6 +89,10 @@ If the poster and/or the trailer URL is not available on TMDB the app gets the p
 <img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f" width="10%" height="10%">
 
 ## Recommendation Examples:
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/a82c4b15-0b9f-45dc-b2d5-f5fa68af81a8)
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/e150b995-a265-4d5b-af9c-6282b80c30c8)
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c06cd9d5-cae9-4fd8-aca3-c57f24df63b2)
+
 
 # License
 This project is licensed under the [MIT License](https://opensource.org/license/mit/)
