@@ -20,7 +20,6 @@ st.set_page_config(page_title=title,page_icon=icon,layout=layout)
 st.markdown(style,unsafe_allow_html=True)
 st.markdown(hyperlink_settings,unsafe_allow_html=True)
 
-settings.app_settings()
 settings.add_bg_from_local('images/back_ground.jpg') 
 
 st.title("Movie Recomendation") # Title
@@ -45,22 +44,27 @@ with st.sidebar.expander("About the app"):
 # --------------SEARCH COLUMNS ------------
 col4,_ = st.columns(2)
 col1,_,col2 = st.columns([5,1,4])
+data = None
 
 with col1:
     movie_name = st.text_input("Enter a movie name:",placeholder='Movie name..',key ='prueba').title()
     if movie_name: 
-        data = movie_data.tmdb_search(movie_name)
-        ''
-        ''
-        ''
-        ''        
         try:
-            st_player(movie_data.tmdb_trailer(data['title']),height = 300) # Get trailer from tmdb api if not video fund use IMdb api
+            data = movie_data.tmdb_search(movie_name)
+            ''
+            ''
+            ''
+            ''        
+            try:
+                st_player(movie_data.tmdb_trailer(data['title']),height = 300) # Get trailer from tmdb api if not video fund use IMdb api
 
+            except:
+                st_player(movie_data.get_trailer(data['title']),height = 300)
         except:
-            st_player(movie_data.get_trailer(data['title']),height = 300)
+            st.write('Please enter a valid Movie or TV-Show name')
+
 with col2:
-    if movie_name:
+    if data:
         
         st.markdown(f'#### {data["title"]}')
         if data["poster_url"]:
@@ -70,7 +74,7 @@ with col2:
 
 view_posters = []
 
-if movie_name:
+if data:
     st.markdown('### Recommendations:')
     try:
         recommend = model.recommendations(data['title'])
