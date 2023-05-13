@@ -82,7 +82,8 @@ To run the app localy, follow these steps:
 
 The app has the ability to update itselfe. Everytime a new movie is seached that was not previously present in the database, that new movie/tv-show will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a github action that will be triggered weekly.
 
-The movie poster's and trailer's URLs are retreived from the TMDB API ![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f)
+The movie poster's and trailer's URLs are retreived from the TMDB API.
+
 If the poster and/or the trailer URL is not available on TMDB the app gets the poster URL from IMDB API and the app will perform a youtube search to get the trailer URL.
 
 <img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f" width="10%" height="10%">
