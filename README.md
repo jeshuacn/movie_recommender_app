@@ -2,7 +2,7 @@
 
 ![](images/MovieMatch.gif)
 
-Welcome to the Movie Recommendation App! This app is designed to help users discover new movies and tv-shows based recommendations using word embedding.
+Welcome to the Movie Recommendation App! Are you tired of endlessly scrolling through streaming platforms, trying to find your next favorite movie or TV show? Our app is here to help! With our movie recommendation algorithm, you can discover new titles that are tailored to your personal taste. Simply input the name of a movie or TV show that you love, and we'll recommend the top 20 similar titles for you to check out. Our app uses advanced word embedding techniques to analyze the plot and themes of each title, ensuring that our recommendations are as accurate and relevant as possible. So sit back, relax, and let us help you discover your next favorite flick!
 
 Movies/TV-Shows recommendations using [Gensim](https://radimrehurek.com/gensim/) library and based on features extracted containing description or information about the movie in text format we stimate the word embeddings for each word in the description using [Gensim](https://radimrehurek.com/gensim/) and based on the cosine similarity between the similar description we built a recommendation algorithm.
 
