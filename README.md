@@ -1,5 +1,7 @@
 # Movie Recommender using Word Embeddings
 
+![](images/MovieMatch.gif)
+
 Welcome to the Movie Recommendation App! This app is designed to help users discover new movies and tv-shows based recommendations using word embedding.
 
 Movies/TV-Shows recommendations using [Gensim](https://radimrehurek.com/gensim/) library and based on features extracted containing description or information about the movie in text format we stimate the word embeddings for each word in the description using [Gensim](https://radimrehurek.com/gensim/) and based on the cosine similarity between the similar description we built a recommendation algorithm.
