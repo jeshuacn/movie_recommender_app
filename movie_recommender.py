@@ -35,9 +35,8 @@ with st.sidebar:
 
 with st.sidebar.expander("About the app"):
     st.write("""
-        Recommentations are movies from 2017 and before due to the information available in the database. 
-        The app will be automatically updated weekly as more recent movies are incorporated into the search.
-    
+        Recommendations are movies from 2017 and before due to the information available in the database. 
+        The app will automatically update weekly as more recent films are incorporated into the search.
     """)
 
 # --------------SEARCH COLUMNS ------------
