@@ -22,13 +22,12 @@ st.markdown(hyperlink_settings,unsafe_allow_html=True)
 
 settings.add_bg_from_local('images/back_ground.jpg') 
 
-st.title("Movie Recomendation") # Title
+st.title(title) # Title
+st.write('Discover your next favorite flick based on your personal taste. Just input the name of your favorite TV Show or Movie and let us do the rest!')
 
 #--------- SIDEBAR --------------
 st.sidebar.title(f'{title} \n \n')
-st.sidebar.markdown('### Movie Recommendation System')
-st.sidebar.write('Welcome to the Movie Recommendation app!')
-st.sidebar.write('If you\'re unsure of what movie to watch, you can input the name of your favorite movie and let the AI Model do the job to find similar movies to recommend.') 
+st.sidebar.markdown('### Welcome to MovieMatch, a movie recommendation app!')
 
 
 with st.sidebar: 
