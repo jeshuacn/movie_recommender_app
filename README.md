@@ -51,9 +51,13 @@ To train our Word2vec model, we used the [gensim](https://radimrehurek.com/gensi
 The hyperparameters for the Word2vec model were set as follows:
 
 sg: 1
+
 Vector size: 300
+
 Window size: 5
+
 Minimum word count: 3
+
 Seed: 14
 
 Overall, the Word2vec model was trained to generate high-quality word embeddings that could capture the semantic and syntactic relationships between words in the movie descriptions. These word embeddings were then used to calculate the cosine similarity between the movie descriptions and generate movie recommendations.
