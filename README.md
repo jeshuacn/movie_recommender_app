@@ -62,7 +62,7 @@ Overall, the Word2vec model was trained to generate high-quality word embeddings
 
 App was deployed using Streamlit.io community cloud. [Website](link).
 
-# How to Run the App
+## How to Run the App
 
 To run the app localy, follow these steps:
 
