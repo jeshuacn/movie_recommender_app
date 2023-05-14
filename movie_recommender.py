@@ -105,11 +105,14 @@ if data:
         for i, movie in enumerate(group):
 
             try:
-                cols[i].image(movie_data.tmdb_search(movie)['poster_url']) # Seach movie poster on TMDb     
+                try:
+                    cols[i].image(movie_data.tmdb_search(movie)['poster_url']) # Seach movie poster on TMDb     
 
+                except:
+                    cols[i].image(movie_data.get_movie_data(movie)["poster_url"]) # If movie not found seach on IMDb
             except:
-                cols[i].image(movie_data.get_movie_data(movie)["poster_url"]) # If movie not found seach on IMDb
-
+                cols[i].image('https://upload.wikimedia.org/wikipedia/commons/c/c2/No_image_poster.png') # If no movie poster URL found, show default "no image" poster
+                
             with cols[i]:
               
                 try:
