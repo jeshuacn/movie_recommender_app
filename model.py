@@ -165,7 +165,7 @@ def new_movie_recommendation(movie_avg_desc_vector,avg_desc_vector_all=avg_desc_
 
         Returns:
         --------
-        list: List of top 20 similar Movie title
+        list: List of top 20 similar Movie titles
 
     """  
     
