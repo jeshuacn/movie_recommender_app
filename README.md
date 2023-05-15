@@ -4,7 +4,7 @@
 
 Are you tired of endlessly scrolling through streaming platforms, trying to find your next favorite movie or TV show? With MovieMatch that won’t be a problem anymore! Welcome to this amazing app where you can easily discover new titles that are tailored to your personal taste. With our movie recommendation algorithm, you can discover by simply input the name of a movie or TV show that you love, and we'll recommend the top 20 similar titles for you to check out. Our app uses advanced word embedding techniques to analyze the plot and themes of each title, ensuring that our recommendations are as accurate and relevant as possible. So, sit back, relax, and let us help you discover your next favorite flick!
 
-Movies/TV-Shows recommendations using [Gensim](https://radimrehurek.com/gensim/) library and based on features extracted containing the description or information about the movie in text format we stimate the word embeddings for each word in the description using [Gensim](https://radimrehurek.com/gensim/) and based on the cosine similarity between the similar description we built a recommendation algorithm.
+Movies/TV-Shows recommendations using [Gensim](https://radimrehurek.com/gensim/) library and based on features extracted containing the description or information about the movie in text format we estimate the word embeddings for each word in the description using [Gensim](https://radimrehurek.com/gensim/) and based on the cosine similarity between the similar description, we built a recommendation algorithm.
 
 Recommended movies are from 2017 and before due to the information available in the database. The app will be automatically updated weekly as more recent movies are incorporated into the search.
 
@@ -86,7 +86,7 @@ To run the app locally, follow these steps:
 
 # App features:
 
-The app can to update itself. Every time a new movie/tv-show is searched that was not previously present in the database, will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a Github action that will be triggered weekly.
+The app can update itself. Every time a new movie/tv-show is searched that was not previously present in the database, will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a Github action that will be triggered weekly.
 
 The movie poster's and trailer's URLs are retrieved from the TMDB API.
 
