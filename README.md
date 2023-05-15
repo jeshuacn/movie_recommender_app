@@ -86,9 +86,9 @@ To run the app locally, follow these steps:
 
 # App features:
 
-The app can to update itself. Everytime a new movie/tv-show is seached that was not previously present in the database, will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a Github action that will be triggered weekly.
+The app can to update itself. Every time a new movie/tv-show is searched that was not previously present in the database, will be recorded in a [Deta.space](https://deta.space/) Base database with its title, description and the description average word embedding vector to then update the dataframe with a Github action that will be triggered weekly.
 
-The movie poster's and trailer's URLs are retreived from the TMDB API.
+The movie poster's and trailer's URLs are retrieved from the TMDB API.
 
 If the poster or trailer URL is unavailable on TMDB, the app gets the poster URL from IMDB API and will perform a youtube search to get the trailer URL.
 
