@@ -10,7 +10,7 @@ Recommended movies are from 2017 and before due to the information available in 
 
 # Data Collection
 
-The data was obtained from [The movie dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle. The dataset contains metadata for 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017.
+The data was obtained from [The movie dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle. The dataset contains metadata for 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of films released on or before July 2017.
 
 This dataset consists of the following files:
 
@@ -44,9 +44,9 @@ For this project, I used the movies_metadata.csv and keywords.csv files.
 
 # Model 
 
-Used the Word2vec technique for generating word embeddings for the movie descriptions. Word2vec is a neural network-based technique that learns high-quality distributed vector representations of words from large amounts of text data.
+I used the Word2vec technique for generating word embeddings for the movie descriptions. Word2vec is a neural network-based technique that learns high-quality distributed vector representations of words from large amounts of text data.
 
-To train the Word2vec model, I used the [gensim](https://radimrehurek.com/gensim/) library. The gensim implementation efficiently implements the skip-gram and continuous bag of words (CBOW) models. I used the Word2Vec algorithm with skip-gram architecture to train the word embeddings. Skip-gram aims to predict the context words given a target word, and it has been shown to work well with large datasets and in capturing semantic relationships between words. I used the Gensim library to train our model on the movie descriptions and other metadata.
+To train the Word2vec model, I used the [gensim](https://radimrehurek.com/gensim/) library. The gensim implementation efficiently implements the skip-gram and continuous bag of words (CBOW) models. I used the Word2Vec algorithm with skip-gram architecture to train the word embeddings. Skip-gram aims to predict the context words given a target word, and it has been shown to work well with large datasets and capture semantic relationships between words. I used the Gensim library to train our model on the movie descriptions and other metadata.
 
 The hyperparameters for the Word2vec model were set as follows:
 
@@ -64,16 +64,16 @@ Overall, the Word2vec model was trained to generate high-quality word embeddings
  
 # Deployment
 
-The app was deployed using Streamlit.io community cloud. [Website](link).
+The app was deployed using the Streamlit.io community cloud. [Go to MovieMatch](https://moviematch.streamlit.app/).
 
 ## How to Run the App
 
-To run the app localy, follow these steps:
+To run the app locally, follow these steps:
 
 1- Download the required packages by running the following command in your terminal:
   pip install -r requirements.txt
  
-2- Get the TMDB API key to retrieve the movie posters and trailer URLs from the TMDB API. You can get one for free by creating an account on [TMDB](https://www.themoviedb.org/) and navigating to your account settins. Copy your API key and store it in the `.env` file under the **'TMDB_KEY'** variable.
+2- Get the TMDB API key to retrieve the movie posters and trailer URLs from the TMDB API. You can get one for free by creating an account on [TMDB](https://www.themoviedb.org/) and navigating to your account settings. Copy your API key and store it in the `.env` file under the **'TMDB_KEY'** variable.
 
 3- Create an account on [Deta Space](https://deta.space/) and get a Base API key to store new movie information in a database. Copy your Base API key and store it in the `.env` file under the **'DETA_KEY'** variable.
 
