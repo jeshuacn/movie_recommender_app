@@ -92,13 +92,14 @@ The movie poster's and trailer's URLs are retrieved from the TMDB API.
 
 If the poster or trailer URL is unavailable on TMDB, the app gets the poster URL from IMDB API and will perform a youtube search to get the trailer URL.
 
-<img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c3984046-7c1d-4f14-b41e-7be458b0768f" width="10%" height="10%">
+
+<img src="https://github.com/jeshuacn/movie_recommender_app/assets/33787097/b4159afb-eeea-4c39-87a1-c54b74a59941" width="10%" height="10%">
 
 ## Recommendation Examples:
-![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/a82c4b15-0b9f-45dc-b2d5-f5fa68af81a8)
-![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/e150b995-a265-4d5b-af9c-6282b80c30c8)
-![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/c06cd9d5-cae9-4fd8-aca3-c57f24df63b2)
 
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/fc033365-69c2-44d6-9483-65c99d1baa10)
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/566be596-f819-4d59-9a4d-6b68b3ec1458)
+![image](https://github.com/jeshuacn/movie_recommender_app/assets/33787097/0d44c337-77c0-4ceb-a1f8-b13657da857e)
 
 # License
 This project is licensed under the [MIT License](https://opensource.org/license/mit/)
