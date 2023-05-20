@@ -36,7 +36,14 @@ def get_movie_data(movie_name,size = 'full-size cover url'):
     # get the movie object cover url
     poster_url  = movie[size]
 
-    return {'keywords':movie['keywords'][:5],'poster_url':poster_url}
+    try:
+        keywords = movie['keywords'][:5]
+       
+    except:
+        keywords = movie['keywords']
+        st.write("")
+
+    return {'keywords':keywords,'poster_url':poster_url}
 
 @st.cache_data
 def get_trailer(movie_name):
