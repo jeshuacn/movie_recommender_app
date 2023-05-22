@@ -37,10 +37,11 @@ def get_movie_data(movie_name,size = 'full-size cover url'):
     poster_url  = movie[size]
 
     try:
-        keywords = movie['keywords'][:5]
-       
-    except:
         keywords = movie['keywords']
+        keywords = keywords[:5] if len(keywords) >=5 else keywords
+
+    except:
+        keywords = ""
         st.write("")
 
     return {'keywords':keywords,'poster_url':poster_url}
