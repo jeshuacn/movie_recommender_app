@@ -1,8 +1,8 @@
 # Movie Recommender using Word Embeddings
 
-[![Go to WebPage]](https://moviematch.streamlit.app/)  
+[![APP]](https://moviematch.streamlit.app/)  
 
-[Go to WebPage]: https://img.shields.io/badge/Notebook-informational?style=for-the-badge
+[APP]: [https://img.shields.io/badge/Notebook-informational?style=for-the-badge](https://img.shields.io/badge/Go_to_webpage-informational?style=for-the-badge)
 
 
 ![](images/MovieMatch.gif)
