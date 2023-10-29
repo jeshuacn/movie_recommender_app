@@ -2,7 +2,7 @@
 
 [![Go to WebPage]](https://moviematch.streamlit.app/)  
 
-[Go to WebPage]: [https://img.shields.io/badge/Go_to_webpage-informational?style=for-the-badge]
+[Go to WebPage]: https://img.shields.io/badge/Go_to_webpage-informational?style=for-the-badge
 
 
 ![](images/MovieMatch.gif)
