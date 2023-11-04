@@ -1,5 +1,10 @@
 # Movie Recommender using Word Embeddings
 
+[![Go to WebPage]](https://moviematch.streamlit.app/)  
+
+[Go to WebPage]: https://img.shields.io/badge/Go_to_webpage-informational?style=for-the-badge
+
+
 ![](images/MovieMatch.gif)
 
 Are you tired of endlessly scrolling through streaming platforms, trying to find your next favorite movie or TV show? With MovieMatch that won’t be a problem anymore! Welcome to this amazing app where you can easily discover new titles that are tailored to your personal taste. With our movie recommendation algorithm, you can discover by simply input the name of a movie or TV show that you love, and we'll recommend the top 20 similar titles for you to check out. Our app uses advanced word embedding techniques to analyze the plot and themes of each title, ensuring that our recommendations are as accurate and relevant as possible. So, sit back, relax, and let us help you discover your next favorite flick!
