@@ -76,6 +76,9 @@ if data:
     st.markdown('### Recommendations:')
     try:
         recommend = model.recommendations(data['title'])
+        
+        # ADD search to history database
+        db.add_search_to_history(data['title'],recommend,datetime.today().strftime('%Y-%m-%d'))
 
     except: # If movie not found in dataframe
         description= preprocessing.new_movie(movie_name) # Get description from new movie and process it
@@ -87,6 +90,8 @@ if data:
                        description,
                        np.ndarray.tolist(vect),
                        datetime.today().strftime('%Y-%m-%d'))
+        # ADD search to history database
+        db.add_search_to_history(data['title'],recommend,datetime.today().strftime('%Y-%m-%d'))
 
     # Recomendations will be the model output
     for movie in recommend:

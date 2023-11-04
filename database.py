@@ -14,6 +14,7 @@ deta = Deta(DETA_KEY)
 # Connect to database
 db = deta.Base('movies_data')
 db2 = deta.Base('movie_search_history') 
+db3 = deta.Base('app_search_history')
 
 def insert_data(title, description, avg_description_vector,date):
     '''Returns the movie data on a successful creation'''
@@ -50,3 +51,10 @@ def remove_movies():
     movies = get_all_movies()
     for movie in movies:
         db.delete(movie)
+
+def add_search_to_history(title,recommendations,date):
+    '''Add movie searches with recommendations'''
+
+    db3.put({'title':title,
+             'recommendations':recommendations,
+             'searched_date':date})
